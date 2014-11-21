@@ -8,6 +8,8 @@
 
 #import "BaseViewController.h"
 
-@interface SubscribedItemsViewController : BaseViewController
+@interface SubscribedItemsViewController : BaseViewController <UITableViewDelegate, UITableViewDataSource>
+
+@property (strong, nonatomic) UITableView *tableView;
 
 @end

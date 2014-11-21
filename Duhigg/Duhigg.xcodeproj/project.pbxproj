@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		340230941A1BEF9C004EAC30 /* CategoriesCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 340230921A1BEF9C004EAC30 /* CategoriesCellView.m */; };
+		340230951A1BEF9C004EAC30 /* CategoriesCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 340230931A1BEF9C004EAC30 /* CategoriesCellView.xib */; };
+		340230981A1BEFD2004EAC30 /* CategoriesCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340230971A1BEFD2004EAC30 /* CategoriesCollectionViewController.m */; };
+		34924E5A1A16799300ACA160 /* SubscriptionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 34924E581A16799300ACA160 /* SubscriptionTableViewCell.m */; };
+		34924E5B1A16799300ACA160 /* SubscriptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34924E591A16799300ACA160 /* SubscriptionTableViewCell.xib */; };
+		34924E5E1A18E87600ACA160 /* HabitsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34924E5D1A18E87600ACA160 /* HabitsCollectionViewController.m */; };
+		34924E621A18F22300ACA160 /* HabitSubCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 34924E601A18F22300ACA160 /* HabitSubCell.m */; };
+		34924E631A18F22300ACA160 /* HabitSubCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34924E611A18F22300ACA160 /* HabitSubCell.xib */; };
+		34CE2CE71A1E96DD00886435 /* HabitCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 34CE2CE61A1E96DD00886435 /* HabitCategory.m */; };
+		34CE2CED1A1E9D5300886435 /* HabittAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 34CE2CEC1A1E9D5300886435 /* HabittAPI.m */; };
+		34CE2CF01A1EA21F00886435 /* JSONparser.m in Sources */ = {isa = PBXBuildFile; fileRef = 34CE2CEF1A1EA21F00886435 /* JSONparser.m */; };
+		34CE2CF31A1EA98400886435 /* DataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 34CE2CF21A1EA98400886435 /* DataProvider.m */; };
 		34F30E161A115EE100B65631 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F30E151A115EE100B65631 /* main.m */; };
 		34F30E191A115EE100B65631 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F30E181A115EE100B65631 /* AppDelegate.m */; };
 		34F30E1C1A115EE100B65631 /* Duhigg.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 34F30E1A1A115EE100B65631 /* Duhigg.xcdatamodeld */; };
@@ -30,6 +42,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		340230911A1BEF9C004EAC30 /* CategoriesCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CategoriesCellView.h; path = view/CategoriesCellView.h; sourceTree = "<group>"; };
+		340230921A1BEF9C004EAC30 /* CategoriesCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CategoriesCellView.m; path = view/CategoriesCellView.m; sourceTree = "<group>"; };
+		340230931A1BEF9C004EAC30 /* CategoriesCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CategoriesCellView.xib; path = view/CategoriesCellView.xib; sourceTree = "<group>"; };
+		340230961A1BEFD2004EAC30 /* CategoriesCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CategoriesCollectionViewController.h; path = viewControllers/CategoriesCollectionViewController.h; sourceTree = "<group>"; };
+		340230971A1BEFD2004EAC30 /* CategoriesCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CategoriesCollectionViewController.m; path = viewControllers/CategoriesCollectionViewController.m; sourceTree = "<group>"; };
+		34924E571A16799300ACA160 /* SubscriptionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SubscriptionTableViewCell.h; path = view/SubscriptionTableViewCell.h; sourceTree = "<group>"; };
+		34924E581A16799300ACA160 /* SubscriptionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SubscriptionTableViewCell.m; path = view/SubscriptionTableViewCell.m; sourceTree = "<group>"; };
+		34924E591A16799300ACA160 /* SubscriptionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SubscriptionTableViewCell.xib; path = view/SubscriptionTableViewCell.xib; sourceTree = "<group>"; };
+		34924E5C1A18E87600ACA160 /* HabitsCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HabitsCollectionViewController.h; path = viewControllers/HabitsCollectionViewController.h; sourceTree = "<group>"; };
+		34924E5D1A18E87600ACA160 /* HabitsCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HabitsCollectionViewController.m; path = viewControllers/HabitsCollectionViewController.m; sourceTree = "<group>"; };
+		34924E5F1A18F22300ACA160 /* HabitSubCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HabitSubCell.h; path = view/HabitSubCell.h; sourceTree = "<group>"; };
+		34924E601A18F22300ACA160 /* HabitSubCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HabitSubCell.m; path = view/HabitSubCell.m; sourceTree = "<group>"; };
+		34924E611A18F22300ACA160 /* HabitSubCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HabitSubCell.xib; path = view/HabitSubCell.xib; sourceTree = "<group>"; };
+		34CE2CE51A1E96DD00886435 /* HabitCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HabitCategory.h; path = model/HabitCategory.h; sourceTree = "<group>"; };
+		34CE2CE61A1E96DD00886435 /* HabitCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HabitCategory.m; path = model/HabitCategory.m; sourceTree = "<group>"; };
+		34CE2CEB1A1E9D5300886435 /* HabittAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HabittAPI.h; path = dataAccess/HabittAPI.h; sourceTree = "<group>"; };
+		34CE2CEC1A1E9D5300886435 /* HabittAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HabittAPI.m; path = dataAccess/HabittAPI.m; sourceTree = "<group>"; };
+		34CE2CEE1A1EA21F00886435 /* JSONparser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONparser.h; path = dataAccess/JSONparser.h; sourceTree = "<group>"; };
+		34CE2CEF1A1EA21F00886435 /* JSONparser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONparser.m; path = dataAccess/JSONparser.m; sourceTree = "<group>"; };
+		34CE2CF11A1EA98400886435 /* DataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataProvider.h; path = dataAccess/DataProvider.h; sourceTree = "<group>"; };
+		34CE2CF21A1EA98400886435 /* DataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataProvider.m; path = dataAccess/DataProvider.m; sourceTree = "<group>"; };
 		34F30E101A115EE100B65631 /* Duhigg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Duhigg.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34F30E141A115EE100B65631 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34F30E151A115EE100B65631 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -68,6 +101,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		34924E511A1678DB00ACA160 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				34924E571A16799300ACA160 /* SubscriptionTableViewCell.h */,
+				34924E581A16799300ACA160 /* SubscriptionTableViewCell.m */,
+				34924E591A16799300ACA160 /* SubscriptionTableViewCell.xib */,
+				34924E5F1A18F22300ACA160 /* HabitSubCell.h */,
+				34924E601A18F22300ACA160 /* HabitSubCell.m */,
+				34924E611A18F22300ACA160 /* HabitSubCell.xib */,
+				340230911A1BEF9C004EAC30 /* CategoriesCellView.h */,
+				340230921A1BEF9C004EAC30 /* CategoriesCellView.m */,
+				340230931A1BEF9C004EAC30 /* CategoriesCellView.xib */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		34CE2CDD1A1E8F6B00886435 /* dataAccess */ = {
+			isa = PBXGroup;
+			children = (
+				34CE2CEB1A1E9D5300886435 /* HabittAPI.h */,
+				34CE2CEC1A1E9D5300886435 /* HabittAPI.m */,
+				34CE2CEE1A1EA21F00886435 /* JSONparser.h */,
+				34CE2CEF1A1EA21F00886435 /* JSONparser.m */,
+				34CE2CF11A1EA98400886435 /* DataProvider.h */,
+				34CE2CF21A1EA98400886435 /* DataProvider.m */,
+			);
+			name = dataAccess;
+			sourceTree = "<group>";
+		};
+		34CE2CDE1A1E925B00886435 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				34CE2CE51A1E96DD00886435 /* HabitCategory.h */,
+				34CE2CE61A1E96DD00886435 /* HabitCategory.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
 		34F30E071A115EE100B65631 = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +160,8 @@
 		34F30E121A115EE100B65631 /* Duhigg */ = {
 			isa = PBXGroup;
 			children = (
+				34CE2CDE1A1E925B00886435 /* model */,
+				34CE2CDD1A1E8F6B00886435 /* dataAccess */,
 				34F30E171A115EE100B65631 /* AppDelegate.h */,
 				34F30E181A115EE100B65631 /* AppDelegate.m */,
 				34F30E1D1A115EE100B65631 /* ViewController.h */,
@@ -96,6 +169,7 @@
 				34F30E201A115EE100B65631 /* Main.storyboard */,
 				34F30E231A115EE100B65631 /* Images.xcassets */,
 				34F30E251A115EE100B65631 /* LaunchScreen.xib */,
+				34924E511A1678DB00ACA160 /* view */,
 				34F30E3C1A11683D00B65631 /* viewControllers */,
 				34F30E1A1A115EE100B65631 /* Duhigg.xcdatamodeld */,
 				34F30E131A115EE100B65631 /* Supporting Files */,
@@ -136,6 +210,10 @@
 				34F30E3E1A11688100B65631 /* BaseViewController.m */,
 				34F30E401A1168B600B65631 /* SubscribedItemsViewController.h */,
 				34F30E411A1168B600B65631 /* SubscribedItemsViewController.m */,
+				34924E5C1A18E87600ACA160 /* HabitsCollectionViewController.h */,
+				34924E5D1A18E87600ACA160 /* HabitsCollectionViewController.m */,
+				340230961A1BEFD2004EAC30 /* CategoriesCollectionViewController.h */,
+				340230971A1BEFD2004EAC30 /* CategoriesCollectionViewController.m */,
 			);
 			name = viewControllers;
 			sourceTree = "<group>";
@@ -221,7 +299,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				34F30E221A115EE100B65631 /* Main.storyboard in Resources */,
+				34924E631A18F22300ACA160 /* HabitSubCell.xib in Resources */,
+				340230951A1BEF9C004EAC30 /* CategoriesCellView.xib in Resources */,
 				34F30E271A115EE100B65631 /* LaunchScreen.xib in Resources */,
+				34924E5B1A16799300ACA160 /* SubscriptionTableViewCell.xib in Resources */,
 				34F30E241A115EE100B65631 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,12 +321,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34CE2CF01A1EA21F00886435 /* JSONparser.m in Sources */,
 				34F30E191A115EE100B65631 /* AppDelegate.m in Sources */,
+				34924E621A18F22300ACA160 /* HabitSubCell.m in Sources */,
+				340230981A1BEFD2004EAC30 /* CategoriesCollectionViewController.m in Sources */,
 				34F30E3F1A11688100B65631 /* BaseViewController.m in Sources */,
+				34924E5E1A18E87600ACA160 /* HabitsCollectionViewController.m in Sources */,
 				34F30E1C1A115EE100B65631 /* Duhigg.xcdatamodeld in Sources */,
 				34F30E1F1A115EE100B65631 /* ViewController.m in Sources */,
+				34CE2CED1A1E9D5300886435 /* HabittAPI.m in Sources */,
+				340230941A1BEF9C004EAC30 /* CategoriesCellView.m in Sources */,
+				34CE2CE71A1E96DD00886435 /* HabitCategory.m in Sources */,
 				34F30E161A115EE100B65631 /* main.m in Sources */,
 				34F30E431A1168B600B65631 /* SubscribedItemsViewController.m in Sources */,
+				34924E5A1A16799300ACA160 /* SubscriptionTableViewCell.m in Sources */,
+				34CE2CF31A1EA98400886435 /* DataProvider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +526,7 @@
 				34F30E381A115EE100B65631 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		34F30E391A115EE100B65631 /* Build configuration list for PBXNativeTarget "DuhiggTests" */ = {
 			isa = XCConfigurationList;
@@ -444,6 +535,7 @@
 				34F30E3B1A115EE100B65631 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
