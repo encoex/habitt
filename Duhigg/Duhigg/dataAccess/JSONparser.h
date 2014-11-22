@@ -12,4 +12,7 @@
 
 +(NSArray *)categoriesFromJson:(NSData *)objectNotation
                          error:(NSError **)error;
+
++(NSArray *)goalsFromJson:(NSData *)objectNotation
+                         error:(NSError **)error;
 @end

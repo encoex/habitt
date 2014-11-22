@@ -10,7 +10,7 @@
 #import "BaseViewController.h"
 #import "DataProvider.h"
 
-@interface CategoriesCollectionViewController : BaseViewController <UICollectionViewDelegate, UICollectionViewDataSource, CategoriesDelegate>
+@interface CategoriesCollectionViewController : BaseViewController <UICollectionViewDelegate, UICollectionViewDataSource, DataProviderDelegate>
 
 @property (strong, nonatomic)UICollectionView *collectionView;
 

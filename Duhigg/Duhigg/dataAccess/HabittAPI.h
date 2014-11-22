@@ -10,8 +10,10 @@
 
 @protocol HabittAPIDelegate
 
-- (void)receiveCategoriesJSON:(NSData *)objectNotation;
-- (void)fetchingCategoriesFailedWithError:(NSError *)error;
+- (void)receiveJsonData:(NSData *)objectNotation
+                 object:(id)objectType;
+
+- (void)fetchingDataFailedWithError:(NSError *)error;
 
 @end
 
@@ -20,5 +22,6 @@
 @property (weak, nonatomic) id<HabittAPIDelegate> delegate;
 
 - (void)getCategories;
+- (void)getGoals;
 
 @end

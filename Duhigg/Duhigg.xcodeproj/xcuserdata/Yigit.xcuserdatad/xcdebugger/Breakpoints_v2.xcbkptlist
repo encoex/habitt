@@ -186,12 +186,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Duhigg/viewControllers/CategoriesCollectionViewController.m"
-            timestampString = "438220126.96182"
+            timestampString = "438354860.342771"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "104"
-            endingLineNumber = "104"
-            landmarkName = "-didReceiveCategories:"
+            startingLineNumber = "110"
+            endingLineNumber = "110"
+            landmarkName = "-didReceiveData:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -202,11 +202,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Duhigg/viewControllers/CategoriesCollectionViewController.m"
-            timestampString = "438219292.348003"
+            timestampString = "438355806.846462"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
             landmarkName = "-viewDidLoad"
             landmarkType = "5">
          </BreakpointContent>
@@ -218,12 +218,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Duhigg/viewControllers/CategoriesCollectionViewController.m"
-            timestampString = "438220126.96182"
+            timestampString = "438354860.342771"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "99"
-            endingLineNumber = "99"
-            landmarkName = "-didReceiveCategories:"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
+            landmarkName = "-didReceiveData:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -234,11 +234,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Duhigg/viewControllers/CategoriesCollectionViewController.m"
-            timestampString = "438219290.037048"
+            timestampString = "438354860.342771"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "77"
-            endingLineNumber = "77"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
             landmarkName = "-collectionView:numberOfItemsInSection:"
             landmarkType = "5">
          </BreakpointContent>
@@ -250,12 +250,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Duhigg/viewControllers/CategoriesCollectionViewController.m"
-            timestampString = "438220126.96182"
+            timestampString = "438354860.342771"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "103"
-            endingLineNumber = "103"
-            landmarkName = "-didReceiveCategories:"
+            startingLineNumber = "109"
+            endingLineNumber = "109"
+            landmarkName = "-didReceiveData:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -266,12 +266,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Duhigg/viewControllers/CategoriesCollectionViewController.m"
-            timestampString = "438219295.475162"
+            timestampString = "438354860.342771"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "95"
-            endingLineNumber = "95"
-            landmarkName = "-didReceiveCategories:"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
+            landmarkName = "-didReceiveData:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -282,27 +282,27 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Duhigg/viewControllers/CategoriesCollectionViewController.m"
-            timestampString = "438219395.387286"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
-            landmarkName = "-collectionView:numberOfItemsInSection:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Duhigg/viewControllers/CategoriesCollectionViewController.m"
-            timestampString = "438219395.804627"
+            timestampString = "438354860.342771"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "78"
             endingLineNumber = "78"
+            landmarkName = "-collectionView:numberOfItemsInSection:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Duhigg/viewControllers/CategoriesCollectionViewController.m"
+            timestampString = "438354860.342771"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
             landmarkName = "-collectionView:numberOfItemsInSection:"
             landmarkType = "5">
          </BreakpointContent>

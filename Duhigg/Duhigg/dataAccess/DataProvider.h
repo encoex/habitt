@@ -9,16 +9,17 @@
 #import <Foundation/Foundation.h>
 #import "HabittAPI.h"
 
-@protocol CategoriesDelegate // Make a more generic name and structure
-- (void)didReceiveCategories:(NSArray *)categories;
-- (void)fetchingCategoriesFailedWithError:(NSError *)error;
+@protocol DataProviderDelegate // Make a more generic name and structure
+- (void)didReceiveData:(NSArray *)categories;
+- (void)fetchingDataFailedWithError:(NSError *)error;
 @end
 
 @interface DataProvider : NSObject<HabittAPIDelegate>
 
 @property (strong, nonatomic) HabittAPI *communicator;
-@property (weak, nonatomic) id<CategoriesDelegate> delegate;
+@property (weak, nonatomic) id<DataProviderDelegate> delegate;
 
 - (void)fetchCategories;
+- (void)fetchGoals;
 
 @end

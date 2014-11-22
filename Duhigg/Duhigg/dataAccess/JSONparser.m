@@ -8,6 +8,7 @@
 
 #import "JSONparser.h"
 #import "HabitCategory.h"
+#import "HabitGoal.h"
 
 @implementation JSONparser
 
@@ -26,8 +27,7 @@
     NSMutableArray *categories = [NSMutableArray new];
     
     NSArray *results = [parsedObject valueForKey:@"categories"];
-    //NSLog(@"Count %d",results.count);
-    
+
     for (NSDictionary *categoryDict in results)
     {
         HabitCategory *category = [HabitCategory new];
@@ -44,6 +44,40 @@
     }
     
     return categories;
+}
+
++(NSArray *)goalsFromJson:(NSData *)objectNotation
+                    error:(NSError **)error
+{
+    NSError *localError = nil;
+    NSDictionary *parsedObject = [NSJSONSerialization JSONObjectWithData:objectNotation options:0 error:&localError];
+    
+    if (localError != nil)
+    {
+        *error = localError;
+        return nil;
+    }
+    
+    NSMutableArray *goals = [NSMutableArray new];
+    
+    NSArray *results = [parsedObject valueForKey:@"goals"];
+
+    for (NSDictionary *resutlsDict in results)
+    {
+        HabitGoal *goal = [HabitGoal new];
+        
+        for (NSString *key in resutlsDict)
+        {
+            if ([goal respondsToSelector:NSSelectorFromString(key)])
+            {
+                [goal setValue:[resutlsDict valueForKey:key] forKey:key];
+            }
+        }
+        
+        [goals addObject:goal];
+    }
+    
+    return goals;
 }
 
 @end

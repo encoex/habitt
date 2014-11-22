@@ -6,8 +6,11 @@
 //  Copyright (c) 2014 Yigit Can Arin. All rights reserved.
 //
 
+
+#import <SDWebImage/UIImageView+WebCache.h>
 #import "CategoriesCollectionViewController.h"
 #import "CategoriesCellView.h"
+#import "HabitCategory.h"
 
 #define COLLECTION_TOP_MARGIN 10
 #define COLLECTION_SIDE_MARGIN 10
@@ -70,7 +73,6 @@
     return 1;
 }
 
-
 - (NSInteger)collectionView:(UICollectionView *)collectionView
      numberOfItemsInSection:(NSInteger)section
 {
@@ -82,15 +84,19 @@
 {
     CategoriesCellView *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"CategoriesCellView" forIndexPath:indexPath];
     
-    cell.categoryImage.image = [UIImage imageNamed:@"Panorama"];
-    cell.categoryTitle.text = @"Health";
+    HabitCategory *currentCategory = self.categories[indexPath.item];
+    
+    [cell.categoryImage sd_setImageWithURL:[NSURL URLWithString:currentCategory.image]
+                          placeholderImage:nil];
+    
+    cell.categoryTitle.text = currentCategory.title;
     
     return cell;
 }
 
 #pragma mark <CategoriesDelegate>
 
-- (void)didReceiveCategories:(NSArray *)categories
+- (void)didReceiveData:(NSArray *)categories
 {
     self.categories = categories;
     
@@ -104,7 +110,7 @@
     }
 }
 
-- (void)fetchingCategoriesFailedWithError:(NSError *)error
+- (void)fetchingDataFailedWithError:(NSError *)error
 {
     NSLog(@"Error %@; %@", error, [error localizedDescription]);
 }
