@@ -7,19 +7,19 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CategoriesCellView">
-            <rect key="frame" x="0.0" y="0.0" width="419" height="141"/>
+            <rect key="frame" x="0.0" y="0.0" width="419" height="170"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="419" height="141"/>
+                <rect key="frame" x="0.0" y="0.0" width="419" height="170"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iFi-Lb-TqY">
-                        <rect key="frame" x="0.0" y="0.0" width="419" height="100"/>
+                        <rect key="frame" x="0.0" y="0.0" width="419" height="130"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="100" id="iJV-Yc-G01"/>
+                            <constraint firstAttribute="height" constant="130" id="iJV-Yc-G01"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rjY-8M-Wr2">
-                        <rect key="frame" x="10" y="110" width="399" height="21"/>
+                        <rect key="frame" x="10" y="140" width="399" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
@@ -27,7 +27,7 @@
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="iFi-Lb-TqY" secondAttribute="trailing" id="9kU-Op-jqD"/>
                 <constraint firstItem="rjY-8M-Wr2" firstAttribute="top" secondItem="iFi-Lb-TqY" secondAttribute="bottom" constant="10" id="WVl-kW-d1Q"/>
@@ -36,12 +36,12 @@
                 <constraint firstItem="iFi-Lb-TqY" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="hwP-Mj-Z6w"/>
                 <constraint firstItem="iFi-Lb-TqY" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="z2a-1B-ZEi"/>
             </constraints>
-            <size key="customSize" width="419" height="141"/>
+            <size key="customSize" width="419" height="170"/>
             <connections>
                 <outlet property="categoryImage" destination="iFi-Lb-TqY" id="oaH-nr-1ol"/>
                 <outlet property="categoryTitle" destination="rjY-8M-Wr2" id="nD8-Uh-sf0"/>
             </connections>
-            <point key="canvasLocation" x="-243.5" y="483.5"/>
+            <point key="canvasLocation" x="-243.5" y="498"/>
         </collectionViewCell>
     </objects>
 </document>

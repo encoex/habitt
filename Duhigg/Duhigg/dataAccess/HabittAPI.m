@@ -11,8 +11,6 @@
 #import "HabitGoal.h"
 #import "JSONparser.h"
 
-
-
 // Fetches json and parses it and gives back to the Data Provider
 // TO DO: Maybe parsing shouldnt be done here but this feels convenient for now.
 @implementation HabittAPI

@@ -86,6 +86,7 @@
 		34F30E3E1A11688100B65631 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseViewController.m; path = viewControllers/BaseViewController.m; sourceTree = "<group>"; };
 		34F30E401A1168B600B65631 /* SubscribedItemsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SubscribedItemsViewController.h; path = viewControllers/SubscribedItemsViewController.h; sourceTree = "<group>"; };
 		34F30E411A1168B600B65631 /* SubscribedItemsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SubscribedItemsViewController.m; path = viewControllers/SubscribedItemsViewController.m; sourceTree = "<group>"; };
+		34F97B491A2247BC00D107B9 /* HabittColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HabittColor.h; path = utils/HabittColor.h; sourceTree = "<group>"; };
 		9F69F82785B3917A6336A595 /* Pods-Duhigg.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Duhigg.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Duhigg/Pods-Duhigg.debug.xcconfig"; sourceTree = "<group>"; };
 		DD3D2D12DF2D646369F76AE1 /* libPods-Duhigg.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Duhigg.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -172,6 +173,7 @@
 		34F30E121A115EE100B65631 /* Duhigg */ = {
 			isa = PBXGroup;
 			children = (
+				34F97B481A22478700D107B9 /* utils */,
 				34CE2CDE1A1E925B00886435 /* model */,
 				34CE2CDD1A1E8F6B00886435 /* dataAccess */,
 				34F30E171A115EE100B65631 /* AppDelegate.h */,
@@ -228,6 +230,14 @@
 				347CD4A81A21FDAB004152B6 /* GoalsCollectionViewController.m */,
 			);
 			name = viewControllers;
+			sourceTree = "<group>";
+		};
+		34F97B481A22478700D107B9 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				34F97B491A2247BC00D107B9 /* HabittColor.h */,
+			);
+			name = utils;
 			sourceTree = "<group>";
 		};
 		7D3ED5A56FC3DCF233AC2330 /* Frameworks */ = {

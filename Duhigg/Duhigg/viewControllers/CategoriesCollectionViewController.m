@@ -13,6 +13,8 @@
 #import "CategoriesCellView.h"
 #import "HabitCategory.h"
 
+#import "HabittColor.h"
+
 #define COLLECTION_TOP_MARGIN 10
 #define COLLECTION_SIDE_MARGIN 10
 #define COLLECTION_BOTTOM_MARGIN 10
@@ -29,12 +31,14 @@
     if(!_collectionView)
     {
         UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
-        flowLayout.itemSize = CGSizeMake(self.view.frame.size.width - COLLECTION_SIDE_MARGIN*2, 140);
+        flowLayout.itemSize = CGSizeMake(self.view.frame.size.width - COLLECTION_SIDE_MARGIN*2, 170);
         flowLayout.minimumLineSpacing = 10;
         flowLayout.minimumInteritemSpacing = 10;
         [flowLayout setSectionInset:UIEdgeInsetsMake(COLLECTION_TOP_MARGIN, COLLECTION_SIDE_MARGIN, COLLECTION_SIDE_MARGIN, COLLECTION_BOTTOM_MARGIN)];
         
         _collectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0,0, self.view.frame.size.width, self.view.frame.size.height) collectionViewLayout:flowLayout];
+        
+        [_collectionView setBackgroundColor:UIColorFromRGB(0xDEDEDE)];
         
         _collectionView.delegate = self;
         _collectionView.dataSource = self;
@@ -92,12 +96,27 @@
     
     cell.categoryTitle.text = currentCategory.title;
     
+#pragma mark Styling the cell begin
+    
+    // adding border
+    [cell.layer setBorderColor:[UIColor lightGrayColor].CGColor];
+    [cell.layer setBorderWidth:1.0f];
+    
+    //smooth out the coreners
+    [cell.layer setCornerRadius:4.0];
+    
+#pragma mark Styling the cell end
+    
     return cell;
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
+    HabitCategory *currentCategory = self.categories[indexPath.item];
+    
     GoalsCollectionViewController *goalsController = [[GoalsCollectionViewController alloc]init];
+    goalsController.collectionViewBackgroundImageUrl = currentCategory.image;
+
     [self.navigationController pushViewController:goalsController animated:YES];
 }
 

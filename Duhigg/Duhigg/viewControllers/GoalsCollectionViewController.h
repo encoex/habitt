@@ -12,6 +12,7 @@
 @interface GoalsCollectionViewController : BaseViewController <UICollectionViewDelegate, UICollectionViewDataSource, DataProviderDelegate>
 
 @property (strong, nonatomic)UICollectionView *collectionView;
+@property (strong, nonatomic)NSString *collectionViewBackgroundImageUrl;
 
 @property (strong, nonatomic)NSArray *goals;
 @property (strong, nonatomic)DataProvider *dataProvider;

@@ -47,8 +47,6 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    //static NSString *simpleTableIdentifier = @"SimpleTableItem";
-    
     SubscriptionTableViewCell *cell = (SubscriptionTableViewCell *)[tableView dequeueReusableCellWithIdentifier:@"SubscriptionTableViewCell"];
     
     if (cell == nil) {
