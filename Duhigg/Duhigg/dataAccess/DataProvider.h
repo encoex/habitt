@@ -10,7 +10,7 @@
 #import "HabittAPI.h"
 
 @protocol DataProviderDelegate // Make a more generic name and structure
-- (void)didReceiveData:(NSArray *)categories;
+- (void)didReceiveData:(NSArray *)parsedData;
 - (void)fetchingDataFailedWithError:(NSError *)error;
 @end
 

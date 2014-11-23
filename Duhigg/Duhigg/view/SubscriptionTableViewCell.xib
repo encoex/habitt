@@ -19,8 +19,8 @@
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uUM-oi-pSD">
-                        <rect key="frame" x="24" y="7" width="60" height="60"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uUM-oi-pSD">
+                        <rect key="frame" x="15" y="7" width="60" height="60"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="60" id="ahB-rg-VBS"/>
                             <constraint firstAttribute="width" constant="60" id="gOt-rR-ssg"/>

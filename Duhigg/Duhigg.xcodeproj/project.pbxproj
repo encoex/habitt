@@ -11,11 +11,11 @@
 		340230951A1BEF9C004EAC30 /* CategoriesCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 340230931A1BEF9C004EAC30 /* CategoriesCellView.xib */; };
 		340230981A1BEFD2004EAC30 /* CategoriesCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340230971A1BEFD2004EAC30 /* CategoriesCollectionViewController.m */; };
 		347CD4A61A20D42D004152B6 /* HabitGoal.m in Sources */ = {isa = PBXBuildFile; fileRef = 347CD4A51A20D42D004152B6 /* HabitGoal.m */; };
+		347CD4A91A21FDAB004152B6 /* GoalsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 347CD4A81A21FDAB004152B6 /* GoalsCollectionViewController.m */; };
+		347CD4AC1A21FFEE004152B6 /* GoalsCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 347CD4AB1A21FFEE004152B6 /* GoalsCollectionViewCell.m */; };
+		347CD4AE1A220025004152B6 /* GoalsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 347CD4AD1A220025004152B6 /* GoalsCollectionViewCell.xib */; };
 		34924E5A1A16799300ACA160 /* SubscriptionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 34924E581A16799300ACA160 /* SubscriptionTableViewCell.m */; };
 		34924E5B1A16799300ACA160 /* SubscriptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34924E591A16799300ACA160 /* SubscriptionTableViewCell.xib */; };
-		34924E5E1A18E87600ACA160 /* HabitsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34924E5D1A18E87600ACA160 /* HabitsCollectionViewController.m */; };
-		34924E621A18F22300ACA160 /* HabitSubCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 34924E601A18F22300ACA160 /* HabitSubCell.m */; };
-		34924E631A18F22300ACA160 /* HabitSubCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34924E611A18F22300ACA160 /* HabitSubCell.xib */; };
 		34CE2CE71A1E96DD00886435 /* HabitCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 34CE2CE61A1E96DD00886435 /* HabitCategory.m */; };
 		34CE2CED1A1E9D5300886435 /* HabittAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 34CE2CEC1A1E9D5300886435 /* HabittAPI.m */; };
 		34CE2CF01A1EA21F00886435 /* JSONparser.m in Sources */ = {isa = PBXBuildFile; fileRef = 34CE2CEF1A1EA21F00886435 /* JSONparser.m */; };
@@ -52,14 +52,14 @@
 		340230971A1BEFD2004EAC30 /* CategoriesCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CategoriesCollectionViewController.m; path = viewControllers/CategoriesCollectionViewController.m; sourceTree = "<group>"; };
 		347CD4A41A20D42D004152B6 /* HabitGoal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HabitGoal.h; path = model/HabitGoal.h; sourceTree = "<group>"; };
 		347CD4A51A20D42D004152B6 /* HabitGoal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HabitGoal.m; path = model/HabitGoal.m; sourceTree = "<group>"; };
+		347CD4A71A21FDAB004152B6 /* GoalsCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GoalsCollectionViewController.h; path = viewControllers/GoalsCollectionViewController.h; sourceTree = "<group>"; };
+		347CD4A81A21FDAB004152B6 /* GoalsCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GoalsCollectionViewController.m; path = viewControllers/GoalsCollectionViewController.m; sourceTree = "<group>"; };
+		347CD4AA1A21FFEE004152B6 /* GoalsCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GoalsCollectionViewCell.h; path = view/GoalsCollectionViewCell.h; sourceTree = "<group>"; };
+		347CD4AB1A21FFEE004152B6 /* GoalsCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GoalsCollectionViewCell.m; path = view/GoalsCollectionViewCell.m; sourceTree = "<group>"; };
+		347CD4AD1A220025004152B6 /* GoalsCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GoalsCollectionViewCell.xib; sourceTree = "<group>"; };
 		34924E571A16799300ACA160 /* SubscriptionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SubscriptionTableViewCell.h; path = view/SubscriptionTableViewCell.h; sourceTree = "<group>"; };
 		34924E581A16799300ACA160 /* SubscriptionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SubscriptionTableViewCell.m; path = view/SubscriptionTableViewCell.m; sourceTree = "<group>"; };
 		34924E591A16799300ACA160 /* SubscriptionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SubscriptionTableViewCell.xib; path = view/SubscriptionTableViewCell.xib; sourceTree = "<group>"; };
-		34924E5C1A18E87600ACA160 /* HabitsCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HabitsCollectionViewController.h; path = viewControllers/HabitsCollectionViewController.h; sourceTree = "<group>"; };
-		34924E5D1A18E87600ACA160 /* HabitsCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HabitsCollectionViewController.m; path = viewControllers/HabitsCollectionViewController.m; sourceTree = "<group>"; };
-		34924E5F1A18F22300ACA160 /* HabitSubCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HabitSubCell.h; path = view/HabitSubCell.h; sourceTree = "<group>"; };
-		34924E601A18F22300ACA160 /* HabitSubCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HabitSubCell.m; path = view/HabitSubCell.m; sourceTree = "<group>"; };
-		34924E611A18F22300ACA160 /* HabitSubCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HabitSubCell.xib; path = view/HabitSubCell.xib; sourceTree = "<group>"; };
 		34CE2CE51A1E96DD00886435 /* HabitCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HabitCategory.h; path = model/HabitCategory.h; sourceTree = "<group>"; };
 		34CE2CE61A1E96DD00886435 /* HabitCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HabitCategory.m; path = model/HabitCategory.m; sourceTree = "<group>"; };
 		34CE2CEB1A1E9D5300886435 /* HabittAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HabittAPI.h; path = dataAccess/HabittAPI.h; sourceTree = "<group>"; };
@@ -115,12 +115,12 @@
 				34924E571A16799300ACA160 /* SubscriptionTableViewCell.h */,
 				34924E581A16799300ACA160 /* SubscriptionTableViewCell.m */,
 				34924E591A16799300ACA160 /* SubscriptionTableViewCell.xib */,
-				34924E5F1A18F22300ACA160 /* HabitSubCell.h */,
-				34924E601A18F22300ACA160 /* HabitSubCell.m */,
-				34924E611A18F22300ACA160 /* HabitSubCell.xib */,
 				340230911A1BEF9C004EAC30 /* CategoriesCellView.h */,
 				340230921A1BEF9C004EAC30 /* CategoriesCellView.m */,
 				340230931A1BEF9C004EAC30 /* CategoriesCellView.xib */,
+				347CD4AA1A21FFEE004152B6 /* GoalsCollectionViewCell.h */,
+				347CD4AB1A21FFEE004152B6 /* GoalsCollectionViewCell.m */,
+				347CD4AD1A220025004152B6 /* GoalsCollectionViewCell.xib */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -222,10 +222,10 @@
 				34F30E3E1A11688100B65631 /* BaseViewController.m */,
 				34F30E401A1168B600B65631 /* SubscribedItemsViewController.h */,
 				34F30E411A1168B600B65631 /* SubscribedItemsViewController.m */,
-				34924E5C1A18E87600ACA160 /* HabitsCollectionViewController.h */,
-				34924E5D1A18E87600ACA160 /* HabitsCollectionViewController.m */,
 				340230961A1BEFD2004EAC30 /* CategoriesCollectionViewController.h */,
 				340230971A1BEFD2004EAC30 /* CategoriesCollectionViewController.m */,
+				347CD4A71A21FDAB004152B6 /* GoalsCollectionViewController.h */,
+				347CD4A81A21FDAB004152B6 /* GoalsCollectionViewController.m */,
 			);
 			name = viewControllers;
 			sourceTree = "<group>";
@@ -330,11 +330,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				34F30E221A115EE100B65631 /* Main.storyboard in Resources */,
-				34924E631A18F22300ACA160 /* HabitSubCell.xib in Resources */,
 				340230951A1BEF9C004EAC30 /* CategoriesCellView.xib in Resources */,
 				34F30E271A115EE100B65631 /* LaunchScreen.xib in Resources */,
 				34924E5B1A16799300ACA160 /* SubscriptionTableViewCell.xib in Resources */,
 				34F30E241A115EE100B65631 /* Images.xcassets in Resources */,
+				347CD4AE1A220025004152B6 /* GoalsCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,13 +388,13 @@
 				34CE2CF01A1EA21F00886435 /* JSONparser.m in Sources */,
 				347CD4A61A20D42D004152B6 /* HabitGoal.m in Sources */,
 				34F30E191A115EE100B65631 /* AppDelegate.m in Sources */,
-				34924E621A18F22300ACA160 /* HabitSubCell.m in Sources */,
 				340230981A1BEFD2004EAC30 /* CategoriesCollectionViewController.m in Sources */,
 				34F30E3F1A11688100B65631 /* BaseViewController.m in Sources */,
-				34924E5E1A18E87600ACA160 /* HabitsCollectionViewController.m in Sources */,
+				347CD4A91A21FDAB004152B6 /* GoalsCollectionViewController.m in Sources */,
 				34F30E1C1A115EE100B65631 /* Duhigg.xcdatamodeld in Sources */,
 				34F30E1F1A115EE100B65631 /* ViewController.m in Sources */,
 				34CE2CED1A1E9D5300886435 /* HabittAPI.m in Sources */,
+				347CD4AC1A21FFEE004152B6 /* GoalsCollectionViewCell.m in Sources */,
 				340230941A1BEF9C004EAC30 /* CategoriesCellView.m in Sources */,
 				34CE2CE71A1E96DD00886435 /* HabitCategory.m in Sources */,
 				34F30E161A115EE100B65631 /* main.m in Sources */,

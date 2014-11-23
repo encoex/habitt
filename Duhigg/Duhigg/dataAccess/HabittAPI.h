@@ -10,9 +10,7 @@
 
 @protocol HabittAPIDelegate
 
-- (void)receiveJsonData:(NSData *)objectNotation
-                 object:(id)objectType;
-
+- (void)receiveJsonData:(NSArray *)parsedData;
 - (void)fetchingDataFailedWithError:(NSError *)error;
 
 @end

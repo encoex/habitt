@@ -7,9 +7,9 @@
 //
 
 #import "CategoriesCollectionViewController.h"
+#import "GoalsCollectionViewController.h"
 #import "SubscribedItemsViewController.h"
 #import "SubscriptionTableViewCell.h"
-#import "HabitsCollectionViewController.h"
 
 @interface SubscribedItemsViewController ()
 
@@ -77,7 +77,8 @@
     return self.sectionTitles[section];
 }
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(goToSelections)];
@@ -86,9 +87,7 @@
     
     self.sectionTitles = [NSArray arrayWithObjects:@"To Do", @"Done", nil];
     
-    self.tableData = [NSArray arrayWithObjects:@"Egg Benedict", @"Mushroom Risotto", @"Full Breakfast", @"Hamburger", @"Ham and Egg Sandwich", nil];
-    
-//    self.tableData = [NSArray arrayWithObjects:@"Egg Benedict", @"Mushroom Risotto", @"Full Breakfast", @"Hamburger", @"Ham and Egg Sandwich", @"Creme Brelee", @"White Chocolate Donut", @"Starbucks Coffee", @"Vegetable Curry", @"Instant Noodle with Egg", @"Noodle with BBQ Pork", @"Japanese Noodle with Pork", @"Green Tea", @"Thai Shrimp Cake", @"Angry Birds Cake", @"Ham and Cheese Panini", nil];
+    self.tableData = [NSArray arrayWithObjects:@"Do this", @"Do that", @"And the other thing", @"And probably the other other thing", nil];
     
     [self.view addSubview:self.tableView];
     
@@ -98,12 +97,10 @@
 {
     CategoriesCollectionViewController *categoriesController = [[CategoriesCollectionViewController alloc]init];
     [self.navigationController pushViewController:categoriesController animated:YES];
-    
-    //HabitsCollectionViewController *habitViewController = [[HabitsCollectionViewController alloc]init];
-    //[self.navigationController pushViewController:habitViewController animated:YES];
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }

@@ -29,31 +29,9 @@
 
 // A generic method for handling habit data coming from the API
 // it should redirect to correct parser based on the given object type
-- (void)receiveJsonData:(NSData *)objectNotation
-                 object:(id)objectType
+- (void)receiveJsonData:(NSArray *)parsedData
 {
-    
-    // Check object type and call appropriate json paresr
-    
-    
-    NSError *error = nil;
-    NSArray *dataArray = nil;
-    
-    if ([objectType isMemberOfClass:([HabitCategory class])])
-    {
-        dataArray = [JSONparser categoriesFromJson:objectNotation error:&error];
-    }
-    
-    if (error != nil)
-    {
-        [self.delegate fetchingDataFailedWithError:error];
-    }
-    
-    else
-    {
-        [self.delegate didReceiveData:dataArray];
-    }
-
+    [self.delegate didReceiveData:parsedData];
 }
 
 - (void)fetchingDataFailedWithError:(NSError *)error
