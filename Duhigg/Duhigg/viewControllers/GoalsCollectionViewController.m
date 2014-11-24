@@ -55,7 +55,6 @@
     return _collectionView;
 }
 
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
