@@ -15,6 +15,42 @@
 // TO DO: Maybe parsing shouldnt be done here but this feels convenient for now.
 @implementation HabittAPI
 
+- (void)getSubscriptions
+{
+    
+    NSString *urlString = @"http://habitt04.appspot.com/subscriptions";
+    NSURL *url = [[NSURL alloc]initWithString:urlString];
+    
+    [NSURLConnection sendAsynchronousRequest:[[NSURLRequest alloc] initWithURL:url]
+                                       queue:[[NSOperationQueue alloc] init]
+                           completionHandler:^(NSURLResponse *response, NSData *data, NSError *error)
+     {
+         if (error)
+         {
+             //error occured while FETCHING json
+             //TO DO: Throw specific exceptions ?
+             [self.delegate fetchingDataFailedWithError:error];
+         }
+         else
+         {
+             NSArray *dataArray = nil;
+             NSError *error = nil;
+             dataArray = [JSONparser subscriptionsFromJson:data error:&error];
+             
+             if(error !=nil)
+             {
+                 //error occured while PARSING json
+                 [self.delegate fetchingDataFailedWithError:error];
+             }
+             else
+             {
+                 [self.delegate receiveJsonData:dataArray];
+             }
+         }
+     }];
+
+}
+
 - (void)getCategories
 {
     NSString *urlString = @"http://habitt04.appspot.com/categories";

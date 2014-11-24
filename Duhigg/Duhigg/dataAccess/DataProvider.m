@@ -14,12 +14,17 @@
 
 @implementation DataProvider
 
--(void)fetchCategories
+- (void)fetchSubscriptions
+{
+    [self.communicator getSubscriptions];
+}
+
+- (void)fetchCategories
 {
     [self.communicator getCategories];
 }
 
--(void)fetchGoals
+- (void)fetchGoals
 {
     [self.communicator getGoals];
 }

@@ -27,7 +27,7 @@
                         </constraints>
                     </imageView>
                 </subviews>
-                <color key="backgroundColor" white="0.66666666666666663" alpha="0.28000000000000003" colorSpace="calibratedWhite"/>
+                <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 <constraints>
                     <constraint firstAttribute="centerY" secondItem="KDw-a3-f2s" secondAttribute="centerY" id="1Xa-rB-rsI"/>
                     <constraint firstAttribute="trailing" secondItem="KDw-a3-f2s" secondAttribute="trailing" constant="15" id="B3N-Jk-RUQ"/>
@@ -36,7 +36,10 @@
                     <constraint firstItem="KDw-a3-f2s" firstAttribute="leading" secondItem="uUM-oi-pSD" secondAttribute="trailing" constant="10" id="lXF-M8-YrN"/>
                 </constraints>
             </tableViewCellContentView>
-            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <accessibility key="accessibilityConfiguration">
+                <accessibilityTraits key="traits" none="YES" notEnabled="YES"/>
+            </accessibility>
             <connections>
                 <outlet property="thumbnail" destination="uUM-oi-pSD" id="lxr-wO-nL8"/>
                 <outlet property="title" destination="KDw-a3-f2s" id="YfS-Hx-sy0"/>

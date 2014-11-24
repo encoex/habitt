@@ -20,4 +20,16 @@
     // Configure the view for the selected state
 }
 
+- (void)toggleCompleted
+{
+    if (self.isCompleted)
+    {
+        self.isCompleted = NO;
+    }
+    else
+    {
+        self.isCompleted = YES;
+    }
+}
+
 @end

@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-Duhigg-SWTableViewCell.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Duhigg.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,12 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>5B3A51F2CD750A2FAF14ECF7</key>
+		<key>6A008764DEFE328E1010A05E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>656B9CF39B4D4077A79FC3B6</key>
+		<key>9FD889B388423B7D8CE1AD83</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F9B364FF2E421A89C40A79C1</key>
 		<dict>
 			<key>primary</key>
 			<true/>

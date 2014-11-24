@@ -10,6 +10,9 @@
 
 @interface JSONparser : NSObject
 
++(NSArray *)subscriptionsFromJson:(NSData *)objectNotation
+                    error:(NSError **)error;
+
 +(NSArray *)categoriesFromJson:(NSData *)objectNotation
                          error:(NSError **)error;
 

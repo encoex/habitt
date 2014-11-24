@@ -101,7 +101,7 @@
     return cell;
 }
 
-#pragma mark <CategoriesDelegate>
+#pragma mark DataProviderDelegate START
 
 - (void)didReceiveData:(NSArray *)data
 {
@@ -121,6 +121,8 @@
 {
     NSLog(@"Error %@; %@", error, [error localizedDescription]);
 }
+
+#pragma mark DataProviderDelegate END
 
 - (void)addBlurToView:(UIView *)view
 {

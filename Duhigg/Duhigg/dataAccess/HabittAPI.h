@@ -21,5 +21,6 @@
 
 - (void)getCategories;
 - (void)getGoals;
+- (void)getSubscriptions;
 
 @end

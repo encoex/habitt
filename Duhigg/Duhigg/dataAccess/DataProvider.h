@@ -19,6 +19,7 @@
 @property (strong, nonatomic) HabittAPI *communicator;
 @property (weak, nonatomic) id<DataProviderDelegate> delegate;
 
+- (void)fetchSubscriptions;
 - (void)fetchCategories;
 - (void)fetchGoals;
 

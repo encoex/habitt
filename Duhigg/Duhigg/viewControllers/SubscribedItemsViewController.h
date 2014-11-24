@@ -7,9 +7,11 @@
 //
 
 #import "BaseViewController.h"
+#import <SWTableViewCell.h>
 
-@interface SubscribedItemsViewController : BaseViewController <UITableViewDelegate, UITableViewDataSource>
+@interface SubscribedItemsViewController : BaseViewController <UITableViewDelegate, UITableViewDataSource, SWTableViewCellDelegate, DataProviderDelegate>
 
 @property (strong, nonatomic) UITableView *tableView;
+@property (strong, nonatomic)DataProvider *dataProvider;
 
 @end

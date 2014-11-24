@@ -7,10 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <SWTableViewCell.h>
 
-@interface SubscriptionTableViewCell : UITableViewCell
+@interface SubscriptionTableViewCell : SWTableViewCell
 
 @property (weak, nonatomic) IBOutlet UILabel *title;
 @property (weak, nonatomic) IBOutlet UIImageView *thumbnail;
+@property bool isCompleted;
+
+- (void)toggleCompleted;
 
 @end
