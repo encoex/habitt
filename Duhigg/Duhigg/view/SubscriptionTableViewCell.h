@@ -12,14 +12,15 @@
 @interface SubscriptionTableViewCell : SWTableViewCell
 
 @property (weak, nonatomic) IBOutlet UILabel *title;
-@property (weak, nonatomic) IBOutlet UIImageView *thumbnail;
 @property (strong, nonatomic) IBOutlet UIView *compIcon;
+@property (strong, nonatomic) IBOutlet UIImageView *checkIcon;
 
 @property bool isCompleted;
 
 - (void)setUpView;
 
 - (void)toggleCompleted;
-- (void)doPopAnimation;
+- (void)doCheckedPopAnimation;
+- (void)doUncheckedPopAnimation;
 
 @end

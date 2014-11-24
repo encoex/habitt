@@ -9,37 +9,35 @@
         <tableViewCell contentMode="left" restorationIdentifier="SubCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="SubscriptionTableViewCell" rowHeight="75" id="KGk-i7-Jjw" customClass="SubscriptionTableViewCell">
             <rect key="frame" x="0.0" y="0.0" width="391" height="75"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+            <tableViewCellContentView key="contentView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Item Text" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KDw-a3-f2s">
-                        <rect key="frame" x="85" y="28" width="291" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Item Text" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KDw-a3-f2s">
+                        <rect key="frame" x="92" y="27" width="291" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uUM-oi-pSD">
-                        <rect key="frame" x="15" y="7" width="60" height="60"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="60" id="ahB-rg-VBS"/>
-                            <constraint firstAttribute="width" constant="60" id="gOt-rR-ssg"/>
-                        </constraints>
-                    </imageView>
                     <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="as3-Xx-ZoT">
-                        <rect key="frame" x="175" y="16" width="41" height="41"/>
+                        <rect key="frame" x="30" y="38" width="10" height="10"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Check" translatesAutoresizingMaskIntoConstraints="NO" id="X1I-oL-zkc">
+                        <rect key="frame" x="30" y="20" width="35" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="SlL-do-SOl"/>
+                            <constraint firstAttribute="height" constant="20" id="W68-PR-NNF"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
                 <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 <constraints>
-                    <constraint firstAttribute="centerY" secondItem="KDw-a3-f2s" secondAttribute="centerY" id="1Xa-rB-rsI"/>
-                    <constraint firstAttribute="trailing" secondItem="KDw-a3-f2s" secondAttribute="trailing" constant="15" id="B3N-Jk-RUQ"/>
-                    <constraint firstAttribute="centerY" secondItem="as3-Xx-ZoT" secondAttribute="centerY" id="R2v-c3-JkY"/>
-                    <constraint firstItem="uUM-oi-pSD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="VHL-1h-040"/>
-                    <constraint firstAttribute="centerY" secondItem="uUM-oi-pSD" secondAttribute="centerY" id="amr-LM-eru"/>
-                    <constraint firstAttribute="centerX" secondItem="as3-Xx-ZoT" secondAttribute="centerX" id="dBL-So-Fgl"/>
-                    <constraint firstItem="KDw-a3-f2s" firstAttribute="leading" secondItem="uUM-oi-pSD" secondAttribute="trailing" constant="10" id="lXF-M8-YrN"/>
+                    <constraint firstItem="as3-Xx-ZoT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="3Um-mq-0PO"/>
+                    <constraint firstAttribute="centerY" secondItem="as3-Xx-ZoT" secondAttribute="centerY" id="4GR-eX-G78"/>
+                    <constraint firstItem="KDw-a3-f2s" firstAttribute="leading" secondItem="as3-Xx-ZoT" secondAttribute="trailing" constant="30" id="Wb5-HQ-m1b"/>
+                    <constraint firstAttribute="centerY" secondItem="KDw-a3-f2s" secondAttribute="centerY" id="np0-qH-auk"/>
+                    <constraint firstAttribute="centerY" secondItem="X1I-oL-zkc" secondAttribute="centerY" id="o4M-2S-f0T"/>
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -47,11 +45,14 @@
                 <accessibilityTraits key="traits" none="YES" notEnabled="YES"/>
             </accessibility>
             <connections>
+                <outlet property="checkIcon" destination="X1I-oL-zkc" id="l1q-ar-tzU"/>
                 <outlet property="compIcon" destination="as3-Xx-ZoT" id="gxa-Uo-iru"/>
-                <outlet property="thumbnail" destination="uUM-oi-pSD" id="lxr-wO-nL8"/>
                 <outlet property="title" destination="KDw-a3-f2s" id="YfS-Hx-sy0"/>
             </connections>
             <point key="canvasLocation" x="342.5" y="187.5"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="Check" width="23" height="20"/>
+    </resources>
 </document>

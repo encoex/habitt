@@ -62,10 +62,10 @@
     cell.rightUtilityButtons = [self rightButtons];
     cell.delegate = self;
     
-    HabitSubscription *currentSub = [self.subscriptions objectAtIndex:indexPath.row];
+    //HabitSubscription *currentSub = [self.subscriptions objectAtIndex:indexPath.row];
+    //cell.title.text = currentSub.title;
     
-    cell.title.text = currentSub.title;
-    [cell.thumbnail setImage:[UIImage imageNamed:@"ThumbNail"]];
+    cell.title.text =  [self.subscriptions objectAtIndex:indexPath.row];
     
     [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
     
@@ -92,14 +92,14 @@
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(goToSelections)];
     
     self.navigationItem.title = @"My Habits";
-    //self.tableData = [NSArray arrayWithObjects:@"Do this", @"Do that", @"And the other thing", @"And probably the other other thing", nil];
+    self.subscriptions = [NSArray arrayWithObjects:@"Do this", @"Do that", @"And the other thing", @"And probably the other other thing", nil];
     
     self.dataProvider = [[DataProvider alloc] init];
     self.dataProvider.communicator = [[HabittAPI alloc] init];
     self.dataProvider.communicator.delegate = self.dataProvider;
     self.dataProvider.delegate = self;
     
-    [self.dataProvider fetchSubscriptions];
+    //[self.dataProvider fetchSubscriptions];
     
     [self.view addSubview:self.tableView];
     
@@ -139,8 +139,6 @@
         case 0:
         {
             NSLog(@"utility buttons closed");
-            SubscriptionTableViewCell *currentCell = (SubscriptionTableViewCell *)cell;
-            [currentCell doPopAnimation];
         }
             break;
         case 1:
