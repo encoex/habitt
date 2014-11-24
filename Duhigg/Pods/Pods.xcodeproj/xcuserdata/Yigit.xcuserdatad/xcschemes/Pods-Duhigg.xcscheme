@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6A008764DEFE328E1010A05E"
+               BlueprintIdentifier = "170E8B6727C3140A4D5C5201"
                BuildableName = "libPods-Duhigg.a"
                BlueprintName = "Pods-Duhigg"
                ReferencedContainer = "container:Pods.xcodeproj">

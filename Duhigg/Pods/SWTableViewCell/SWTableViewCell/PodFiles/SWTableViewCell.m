@@ -518,7 +518,8 @@ static NSString * const kTableViewPanState = @"state";
 }
 
 - (BOOL)isUtilityButtonsHidden {
-    return _cellState == kCellStateCenter;
+    //return _cellState == kCellStateCenter;
+    return _cellState == !kCellStateLeft;
 }
 
 
@@ -758,7 +759,7 @@ static NSString * const kTableViewPanState = @"state";
     }
 }
 
--(void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
+-(void)scrollViewWillEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
 {
     if (!decelerate)
     {

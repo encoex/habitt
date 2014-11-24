@@ -13,8 +13,8 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Item Text" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KDw-a3-f2s">
-                        <rect key="frame" x="85" y="27" width="291" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Item Text" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KDw-a3-f2s">
+                        <rect key="frame" x="85" y="28" width="291" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
@@ -26,13 +26,19 @@
                             <constraint firstAttribute="width" constant="60" id="gOt-rR-ssg"/>
                         </constraints>
                     </imageView>
+                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="as3-Xx-ZoT">
+                        <rect key="frame" x="175" y="16" width="41" height="41"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
                 </subviews>
                 <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 <constraints>
                     <constraint firstAttribute="centerY" secondItem="KDw-a3-f2s" secondAttribute="centerY" id="1Xa-rB-rsI"/>
                     <constraint firstAttribute="trailing" secondItem="KDw-a3-f2s" secondAttribute="trailing" constant="15" id="B3N-Jk-RUQ"/>
+                    <constraint firstAttribute="centerY" secondItem="as3-Xx-ZoT" secondAttribute="centerY" id="R2v-c3-JkY"/>
                     <constraint firstItem="uUM-oi-pSD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="VHL-1h-040"/>
                     <constraint firstAttribute="centerY" secondItem="uUM-oi-pSD" secondAttribute="centerY" id="amr-LM-eru"/>
+                    <constraint firstAttribute="centerX" secondItem="as3-Xx-ZoT" secondAttribute="centerX" id="dBL-So-Fgl"/>
                     <constraint firstItem="KDw-a3-f2s" firstAttribute="leading" secondItem="uUM-oi-pSD" secondAttribute="trailing" constant="10" id="lXF-M8-YrN"/>
                 </constraints>
             </tableViewCellContentView>
@@ -41,6 +47,7 @@
                 <accessibilityTraits key="traits" none="YES" notEnabled="YES"/>
             </accessibility>
             <connections>
+                <outlet property="compIcon" destination="as3-Xx-ZoT" id="gxa-Uo-iru"/>
                 <outlet property="thumbnail" destination="uUM-oi-pSD" id="lxr-wO-nL8"/>
                 <outlet property="title" destination="KDw-a3-f2s" id="YfS-Hx-sy0"/>
             </connections>

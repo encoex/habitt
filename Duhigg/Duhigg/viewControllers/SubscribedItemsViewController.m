@@ -69,6 +69,8 @@
     
     [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
     
+    [cell setUpView];
+    
     return cell;
 }
 
@@ -135,15 +137,18 @@
     switch (state)
     {
         case 0:
+        {
             NSLog(@"utility buttons closed");
+            SubscriptionTableViewCell *currentCell = (SubscriptionTableViewCell *)cell;
+            [currentCell doPopAnimation];
+        }
             break;
         case 1:
             NSLog(@"left utility buttons open");
-            [cell hideUtilityButtonsAnimated:YES];
             break;
-        case 2:
-            NSLog(@"right utility buttons open");
-            break;
+//        case 2:
+//            NSLog(@"right utility buttons open");
+//            break;
         default:
             break;
     }

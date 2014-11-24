@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-Duhigg-pop.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Duhigg.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>6A008764DEFE328E1010A05E</key>
+		<key>170E8B6727C3140A4D5C5201</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9FD889B388423B7D8CE1AD83</key>
+		<key>703A462B22CF7294668D358C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F9B364FF2E421A89C40A79C1</key>
+		<key>E66B6FA1CC64F310E596A3E2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F8D71A62E358A473749F0F53</key>
 		<dict>
 			<key>primary</key>
 			<true/>

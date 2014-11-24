@@ -13,8 +13,13 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *title;
 @property (weak, nonatomic) IBOutlet UIImageView *thumbnail;
+@property (strong, nonatomic) IBOutlet UIView *compIcon;
+
 @property bool isCompleted;
 
+- (void)setUpView;
+
 - (void)toggleCompleted;
+- (void)doPopAnimation;
 
 @end

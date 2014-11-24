@@ -4,6 +4,7 @@
 target 'Duhigg' do
 pod 'SDWebImage', '~>3.6'
 pod 'SWTableViewCell', '~> 0.3.6'
+pod 'pop', '~> 1.0'
 
 end
 
