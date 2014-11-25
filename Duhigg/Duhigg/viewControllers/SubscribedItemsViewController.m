@@ -49,7 +49,8 @@
     return tableCell;
 }
 
-- (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath
+- (NSIndexPath *)tableView:(UITableView *)tableView
+  willSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     //NSIndexPath *endIndexPath = [NSIndexPath indexPathForRow:0 inSection:0];
     //[self.tableView moveRowAtIndexPath:indexPath toIndexPath:endIndexPath];
@@ -58,7 +59,8 @@
 }
 
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+- (UITableViewCell *)tableView:(UITableView *)tableView
+         cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     SubscriptionTableViewCell *cell = (SubscriptionTableViewCell *)[tableView dequeueReusableCellWithIdentifier:@"SubscriptionTableViewCell"];
     
@@ -67,7 +69,7 @@
         cell = [nib objectAtIndex:0];
     }
     
-    cell.leftUtilityButtons = [self leftButtons];
+    cell.leftUtilityButtons = [self leftButtons:cell.isCompleted];
     cell.rightUtilityButtons = [self rightButtons];
     cell.delegate = self;
     
@@ -100,7 +102,7 @@
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(goToSelections)];
     
-    self.navigationItem.title = @"My Habits";
+    self.navigationItem.title = @"Today";
     self.subscriptions = [NSArray arrayWithObjects:@"Do this", @"Do that", @"And the other thing", @"And probably the other other thing", nil];
     
     self.dataProvider = [[DataProvider alloc] init];
@@ -123,13 +125,22 @@
     return rightUtilityButtons;
 }
 
-- (NSArray *)leftButtons
+- (NSArray *)leftButtons:(BOOL)isCompleted
 {
     NSMutableArray *leftUtilityButtons = [NSMutableArray new];
     
-    [leftUtilityButtons sw_addUtilityButtonWithColor:
-     [UIColor colorWithRed:0.07 green:0.75f blue:0.16f alpha:1.0]
-                                                icon:[UIImage imageNamed:@"Check"]];
+    if(isCompleted)
+    {
+        [leftUtilityButtons sw_addUtilityButtonWithColor:[UIColor grayColor]
+                                                   title:@"Undo"];
+    }
+    else
+    {
+        [leftUtilityButtons sw_addUtilityButtonWithColor:
+         [UIColor colorWithRed:0.07 green:0.75f blue:0.16f alpha:1.0]
+                                                    icon:[UIImage imageNamed:@"Check"]];
+    }
+    
     return leftUtilityButtons;
 }
 
@@ -161,7 +172,6 @@
     }
 }
 
-
 - (void)swipeableTableViewCell:(SWTableViewCell *)cell didTriggerLeftUtilityButtonWithIndex:(NSInteger)index
 {
     SubscriptionTableViewCell *currentCell = (SubscriptionTableViewCell *)cell;
@@ -180,6 +190,18 @@
     [alertTest show];
     
     [cell hideUtilityButtonsAnimated:YES];
+}
+
+
+- (void)swipeableTableViewCellDidEndScrolling:(SWTableViewCell *)cell
+{
+    SubscriptionTableViewCell *currentCell = (SubscriptionTableViewCell *)cell;
+    
+    if(cell.frame.origin.x == 0)
+    {
+        //place to change the utility button
+         cell.leftUtilityButtons = [self leftButtons:currentCell.isCompleted];
+    }
 }
 
 - (BOOL)swipeableTableViewCellShouldHideUtilityButtonsOnSwipe:(SWTableViewCell *)cell

@@ -31,6 +31,9 @@
 
 - (void)sw_addUtilityButtonWithColor:(UIColor *)color icon:(UIImage *)icon
 {
+    // first remove all to add that one in order
+    //[self removeAllObjects];
+    
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.backgroundColor = color;
     [button setImage:icon forState:UIControlStateNormal];
