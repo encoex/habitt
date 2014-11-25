@@ -473,6 +473,9 @@ static NSString * const kTableViewPanState = @"state";
 
 - (void)leftUtilityButtonHandler:(id)sender
 {
+    NSIndexPath *cellIndexPath = [self.containingTableView indexPathForCell:self];
+    [self.containingTableView.delegate tableView:self.containingTableView willSelectRowAtIndexPath:cellIndexPath];
+    
     SWUtilityButtonTapGestureRecognizer *utilityButtonTapGestureRecognizer = (SWUtilityButtonTapGestureRecognizer *)sender;
     NSUInteger utilityButtonIndex = utilityButtonTapGestureRecognizer.buttonIndex;
     if ([self.delegate respondsToSelector:@selector(swipeableTableViewCell:didTriggerLeftUtilityButtonWithIndex:)])

@@ -49,6 +49,15 @@
     return tableCell;
 }
 
+- (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    //NSIndexPath *endIndexPath = [NSIndexPath indexPathForRow:0 inSection:0];
+    //[self.tableView moveRowAtIndexPath:indexPath toIndexPath:endIndexPath];
+    
+    return indexPath;
+}
+
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     SubscriptionTableViewCell *cell = (SubscriptionTableViewCell *)[tableView dequeueReusableCellWithIdentifier:@"SubscriptionTableViewCell"];
@@ -151,6 +160,7 @@
             break;
     }
 }
+
 
 - (void)swipeableTableViewCell:(SWTableViewCell *)cell didTriggerLeftUtilityButtonWithIndex:(NSInteger)index
 {
